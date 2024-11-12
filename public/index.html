@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Image Gallery API</title>
+	<link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<h1>Image Gallery API</h1>
+		</div>
+	</header>
+
+	<main>
+		<div class="container">
+			<section class="search-section">
+				<input type="text" id="search-input" placeholder="Search images...">
+				<button id="search-btn">Search</button>
+			</section>
+
+			<section class="gallery-section">
+				<h2>Gallery</h2>
+				<div id="images-container" class="image-gallery"></div>
+
+				<div class="pagination">
+					<button id="prev-page" class="pagination-btn">Previous</button>
+					<span>Page <span id="current-page">1</span> of <span id="total-pages">1</span></span>
+					<button id="next-page" class="pagination-btn">Next</button>
+				</div>
+			</section>
+		</div>
+	</main>
+
+	<h2>API Documentation</h2>
+	<div class="docs">
+		<ul>
+				<li><code>/api/images</code></li>
+				<li><code>/api/images?page={pageNumber}</code></li>
+				<li><code>/api/images?q={searchTerm}</code></li>
+				<li><code>/api/images?page={pageNumber}&q={searchTerm}</code></li>
+				<li><code>/api/image/random</code></li>
+			</ul>
+
+<pre>fetch('http://localhost:3000/api/')
+.then(response => response.json())
+.then(data => console.log(data));</pre>
+	</div>
+
+	<footer>
+		<div class="container">
+			<p>© 2024 Image Gallery API</p>
+		</div>
+	</footer>
+
+	<script src="/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "image-api",
+  "version": "1.0.0",
+  "description": "A simple API to serve random and specific images.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "image",
+    "API",
+    "random",
+    "server"
+  ],
+  "author": "Ritu Raj Pratap Singh",
+  "license": "MIT"
+}
